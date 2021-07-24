@@ -160,6 +160,6 @@ function citye() {}
 
 
 /*
-git add sketch.js
+git add sketch.js style.css
 git commit -m "hululu"
 git push -u origin */
