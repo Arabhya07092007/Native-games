@@ -34,7 +34,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight+250);
 
   score = 0;
 
@@ -64,7 +64,7 @@ function draw() {
   citye();
 
   for (i = -500; i < 10000; i = i + 700) {
-    image(cityImage, i, 0, 1000, 800);
+    image(cityImage, i, 250, 700, 500);
   }
 
   monkey.collide(ground);
@@ -157,3 +157,9 @@ function rock() {
 }
 
 function citye() {}
+
+
+/*
+git add sketch.js
+git commit -m "hululu"
+git push -u origin */
