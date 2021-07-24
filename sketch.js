@@ -4,7 +4,7 @@ var banana, bananaImage, obstacle, obstacleImage;
 var FoodGroup, obstacleGroup;
 var score;
 
-var city,  cityImage;
+var city, cityImage;
 var ground;
 
 var PLAY = 1;
@@ -34,7 +34,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(displayWidth, displayHeight);
 
   score = 0;
 
@@ -46,13 +46,13 @@ function setup() {
 
   monkey = createSprite(300, 200, 10, 10);
   monkey.addAnimation("monkey_running", monkey_running);
-  monkey.scale = 0.17;
+  monkey.scale = 0.25;
   monkey.velocityY = 4;
 
   monkey.velocityY = monkey.velocityY + 1;
 
-  ground = createSprite(300, 460, 600, 14);
-  ground.visible = false;
+  ground = createSprite(300, 720, 800, 14);
+  // ground.visible = false;
 
   FoodGroup = createGroup();
   obstacleGroup = createGroup();
@@ -63,10 +63,10 @@ function draw() {
 
   citye();
 
-  for (i = -500; i < 10000; i = i + 750) {
-    image(cityImage, i, -60,1000,700);
+  for (i = -500; i < 10000; i = i + 700) {
+    image(cityImage, i, 0, 1000, 800);
   }
-  console.log(i);
+  console.log(displayHeight, "height", displayWidth, "width");
 
   monkey.collide(ground);
 
