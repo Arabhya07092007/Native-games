@@ -69,7 +69,10 @@ function draw() {
 
   monkey.collide(ground);
 
-  if ((touches.length !== 0, keyDown("space") && monkey.y > 270)) {
+  if (
+    (touches.length !== 0 && monkey.y > 270) ||
+    (keyDown("space") && monkey.y > 270)
+  ) {
     monkey.velocityY = -22;
   }
 
