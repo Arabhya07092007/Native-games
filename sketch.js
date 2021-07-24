@@ -34,7 +34,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(displayWidth, displayHeight);
+  createCanvas(windowWidth, windowHeight);
 
   score = 0;
 
@@ -66,7 +66,6 @@ function draw() {
   for (i = -500; i < 10000; i = i + 700) {
     image(cityImage, i, 0, 1000, 800);
   }
-  console.log(displayHeight, "height", displayWidth, "width");
 
   monkey.collide(ground);
 
