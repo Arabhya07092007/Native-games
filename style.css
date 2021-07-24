@@ -1,6 +1,15 @@
-html, body {
+* {
   margin: 0;
   padding: 0;
+}
+.links:link {
+  display: flexbox;
+  margin: 40px;
+  text-decoration: none;
+  align-items: center;
+  color: azure;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: 0.8s;
 }
 canvas {
   display: block;
