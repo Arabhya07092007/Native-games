@@ -34,7 +34,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight + 245);
+  createCanvas(windowWidth, windowHeight + 250);
 
   score = 0;
 
