@@ -34,7 +34,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight+250);
+  createCanvas(windowWidth, windowHeight + 250);
 
   score = 0;
 
@@ -52,7 +52,7 @@ function setup() {
   monkey.velocityY = monkey.velocityY + 1;
 
   ground = createSprite(300, 720, 800, 14);
-  // ground.visible = false;
+  ground.visible = false;
 
   FoodGroup = createGroup();
   obstacleGroup = createGroup();
@@ -157,7 +157,6 @@ function rock() {
 }
 
 function citye() {}
-
 
 /*
 git add sketch.js style.css
